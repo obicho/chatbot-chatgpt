@@ -15,7 +15,7 @@ function chatbot_chatgpt_shortcode() {
     ob_start();
     $icons_url =  plugins_url('/icons', __FILE__);
     ?>
-    <div id="chatbot-chatgpt" style="display: none;" class="rounded-15">
+    <div id="chatbot-chatgpt" style="display: none; <?php if(wp_is_mobile()) echo('right:50px;');?>" class="rounded-15">
         <div id="chatbot-chatgpt-header" class="header-back header-rounded flex flex-row justify-between" >
             <div id="chatgptTitle" class="title"><span><?php echo $bot_name; ?></span><img src="<?php echo $icons_url . '/wave.png';?>" alt="Hi" class="wave-size" ></div>
             <div class="right-header flex items-center ">
@@ -34,9 +34,20 @@ function chatbot_chatgpt_shortcode() {
                 </div>
             </div>
         </div>
-        <div class="state-display"> 
-         <img src="<?php echo $icons_url . '/state-back.png';?>" class="state-back" alt="">
-          <div class="state-text" style=""><div class="state-badge"></div> <span>We are online</span></div>
+        <div class="state-display "> 
+            <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" style="z-index: -1;" >
+                 <style type="text/css">
+                    path{fill:url(#MyGradient)}
+                </style>
+                <defs>
+                    <linearGradient id="MyGradient">
+                        <stop offset="0%" stop-color="#009933" />
+                        <stop offset="100%" stop-color="#00ffa2" />
+                    </linearGradient>
+                </defs>
+                <path d="M 0 78 C 253 129 358 45 531 91 L 502 0 L 0 0 Z" style="stroke: none;"></path>
+            </svg>
+            <div class="state-text" style=""><div class="state-badge"></div> <span>We are online</span></div>
         </div>
         <div id="chatbot-chatgpt-conversation"></div>
         <div id="chatbot-chatgpt-input">
