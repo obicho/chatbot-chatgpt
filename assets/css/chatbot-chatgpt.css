@@ -101,7 +101,7 @@
 
 .user-text {
     display: inline-block;
-    background: linear-gradient(to right, #2446e1, #05b7fa);
+    background: linear-gradient(to right, #009933, #00ffa2);
     color: #ffffff;
     padding: 5px 10px;
     border-radius: 12px;
@@ -115,7 +115,7 @@
 .bot-text {
     display: inline-block;
     color: #000;
-    border: 1px solid #007bff;
+    border: 1px solid #009933;
     padding: 5px 10px;
     border-radius: 12px;
     font-size: 15px;
@@ -370,7 +370,7 @@
    align-items: center;
    gap: 10px;
    z-index:1; 
-   margin:20px
+   margin: 26px
 }
 
 .state-badge {
@@ -450,7 +450,7 @@
 svg {
     display: inline-block;
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
   }
 
