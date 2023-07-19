@@ -152,7 +152,7 @@
 }
 
 .chatbot-collapse-btn:hover {
-    background-color: #0257b3;
+    background-color: #009933;
 }
 
 .chatbot-collapsed {
@@ -180,7 +180,7 @@
     position: fixed;
     bottom: 2%;
     right: 2%;
-    background-color: #007bff;
+    background-color: #009933;
     color: white;
     border: none;
     cursor: pointer;
@@ -193,7 +193,7 @@
 }
 
 #chatgpt-open-btn:hover {
-    background-color: #0257b3;
+    background-color: #009933;
 }
 
 #chatgptTitle.title {
@@ -282,13 +282,13 @@
 }
 
 .action-btn:hover {
-    background-color: #263ddf;
+    background-color: #009933;
     cursor: pointer;
 }
 
 .header-back {
     /* background-color: #3a4eeb !important; */
-    background: linear-gradient(to right, #2446e1, #05b7fa);
+    background: linear-gradient(to right, #009933, #00ffa2);
 
 }
 
@@ -347,7 +347,7 @@
     border-radius:50%; 
     width:50px; 
     height: 50px; 
-    background: linear-gradient(to bottom, #2446e1, #05b7fa);
+    background: linear-gradient(to bottom, #009933, #00ffa2);
     display:flex; 
     align-items: center;
     justify-content: center; 
@@ -445,4 +445,18 @@
     background-color: #555;
     cursor: pointer;
     /* color of the scroll thumb on hover */
+}
+
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.state-display {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
 }
