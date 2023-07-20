@@ -34,9 +34,20 @@ function chatbot_chatgpt_shortcode() {
                 </div>
             </div>
         </div>
-        <div class="state-display"> 
-         <img src="<?php echo $icons_url . '/state-back.png';?>" class="state-back" alt="">
-          <div class="state-text" style=""><div class="state-badge"></div> <span>We are online</span></div>
+        <div class="state-display "> 
+            <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" style="z-index: -1;" >
+                 <style type="text/css">
+                    path{fill:url(#MyGradient)}
+                </style>
+                <defs>
+                    <linearGradient id="MyGradient">
+                        <stop offset="0%" stop-color="#009933" />
+                        <stop offset="100%" stop-color="#00ffa2" />
+                    </linearGradient>
+                </defs>
+                <path d="M 0 71 C 251 129 358 45 531 86 L 502 0 L 0 0 Z" style="stroke: none;"></path>
+            </svg>
+            <div class="state-text" style=""><div class="state-badge"></div> <span>We are online</span></div>
         </div>
         <div id="chatbot-chatgpt-conversation"></div>
         <div id="chatbot-chatgpt-input">
